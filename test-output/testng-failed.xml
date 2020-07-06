@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods" allow-return-values="true">
+  <test thread-count="3" name="Test(failed)" parallel="methods">
+    <parameter name="expected" value="6"/>
+    <parameter name="number1" value="4"/>
+    <parameter name="number2" value="2"/>
+    <groups>
+      <run>
+        <include name="Important"/>
+        <exclude name="Division"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pkg1.Calculator">
+        <methods>
+          <include name="welcome" invocation-numbers="0"/>
+          <include name="intro"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- pkg1.Calculator -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
