@@ -1,0 +1,12 @@
+User Story:
+As a valid user.
+I can enter all the informations to create a form.
+I can able to submit the practice form successfully.
+
+Scenario: Considering as a valid user, I should be able to fill all the details and submit practice form successfully.
+
+Given that I launch chrome browser with demoqa site
+When I navigate to the practice form entry page
+Then I enter all the necessary details in the page successfully
+And I submit the form
+And I can able to see the confirmation message successfully

@@ -1,0 +1,12 @@
+User Story:
+As a valid user.
+I can able to login to book store application.
+I can able to access all the books available successfully.
+
+Scenario: Considering as a valid user, I should be able to login to the book store application and access all the books available.
+
+Given that I launch chrome browser with demoqa site
+When I login with valid username and password
+Then I can able to access the book store application
+And I can add any book avaiable into my collection
+And I can able to logout successfully
